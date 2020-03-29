@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen-->
+        <scene sceneID="F1f-zZ-dbD">
+            <objects>
+                <viewController storyboardIdentifier="splash" id="6EF-0k-XXR" customClass="LaunchScreen" customModule="Time_Arrangement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3fi-my-BNW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-ja-Tbh">
+                                <rect key="frame" x="147" y="329" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="l7z-gA-Tx6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gci-7P-gIk">
+                                <rect key="frame" x="112" y="489" width="190" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="r3j-xC-ocM"/>
+                                    <constraint firstAttribute="width" constant="190" id="xut-OX-7O7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4V-jk-ngF">
+                                <rect key="frame" x="144" y="613" width="126" height="33"/>
+                                <color key="backgroundColor" red="0.57076483200000006" green="0.81126538209999999" blue="0.61826131520000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="DJx-qA-nSV"/>
+                                </constraints>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Build" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNo-LQ-eGh">
+                                <rect key="frame" x="112" y="525" width="190" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="s1G-AN-7R4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gci-7P-gIk" firstAttribute="centerX" secondItem="3fi-my-BNW" secondAttribute="centerX" id="8Ea-Jl-eph"/>
+                            <constraint firstItem="mDh-ja-Tbh" firstAttribute="centerX" secondItem="3fi-my-BNW" secondAttribute="centerX" id="9Jh-U5-Huz"/>
+                            <constraint firstItem="gci-7P-gIk" firstAttribute="leading" secondItem="jpH-8Z-15X" secondAttribute="leading" constant="112" id="HyJ-Nk-fOE"/>
+                            <constraint firstItem="mDh-ja-Tbh" firstAttribute="top" secondItem="jpH-8Z-15X" secondAttribute="top" constant="285" id="MOv-MF-gXP"/>
+                            <constraint firstItem="gci-7P-gIk" firstAttribute="trailing" secondItem="PNo-LQ-eGh" secondAttribute="trailing" id="R8d-k0-Ghs"/>
+                            <constraint firstItem="R4V-jk-ngF" firstAttribute="centerX" secondItem="3fi-my-BNW" secondAttribute="centerX" id="VX8-f5-J5E"/>
+                            <constraint firstItem="gci-7P-gIk" firstAttribute="leading" secondItem="PNo-LQ-eGh" secondAttribute="leading" id="aF3-ez-oSX"/>
+                            <constraint firstItem="PNo-LQ-eGh" firstAttribute="top" secondItem="gci-7P-gIk" secondAttribute="bottom" constant="15" id="c67-i7-84C"/>
+                            <constraint firstItem="R4V-jk-ngF" firstAttribute="leading" secondItem="jpH-8Z-15X" secondAttribute="leading" constant="144" id="cHh-ey-3m2"/>
+                            <constraint firstItem="gci-7P-gIk" firstAttribute="top" secondItem="mDh-ja-Tbh" secondAttribute="bottom" constant="40" id="mxj-j8-Dms"/>
+                            <constraint firstItem="mDh-ja-Tbh" firstAttribute="leading" secondItem="jpH-8Z-15X" secondAttribute="leading" constant="147" id="oPY-zs-GtN"/>
+                            <constraint firstItem="gci-7P-gIk" firstAttribute="leading" secondItem="jpH-8Z-15X" secondAttribute="leading" constant="112" id="wD9-KE-FR4"/>
+                            <constraint firstItem="R4V-jk-ngF" firstAttribute="top" secondItem="PNo-LQ-eGh" secondAttribute="bottom" constant="67" id="yaY-qs-jPI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jpH-8Z-15X"/>
+                    </view>
+                    <connections>
+                        <outlet property="build" destination="PNo-LQ-eGh" id="gJc-s6-vel"/>
+                        <outlet property="continueButton" destination="R4V-jk-ngF" id="ixD-z4-cfP"/>
+                        <outlet property="version" destination="gci-7P-gIk" id="Mzo-S6-kYB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fkr-Dp-e2N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="38.169642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashIcon" width="128" height="128"/>
+    </resources>
+</document>
